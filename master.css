@@ -1,0 +1,62 @@
+.name{
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.title {
+  height: 75px;
+  margin-bottom: 0;
+}
+
+
+.aside{
+  height: 600px;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.display {
+  height: 600px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.row {
+  margin-top: 0;
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.cat {
+  height: 60px;
+  width: 200px;
+  background-color: pink;
+  margin: 0 auto;
+  border-radius: 15px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card {
+  height: 65%;
+  width: 70%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  background-color: pink;
+  border-radius: 15px;
+}
