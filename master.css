@@ -3,7 +3,6 @@
   font-size: 50px;
 }
 
-
 .title {
   height: 75px;
   margin-bottom: 0;
@@ -52,11 +51,35 @@
   width: 70%;
   background-color: white;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+
 }
 
-.button {
+.question{
+  width: 90%;
+  height: 50%;
+  background-color: red;
+  text-align: center;
+
+}
+
+.next {
   height: 50px;
   width: 200px;
   background-color: pink;
   border-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#card1{
+  background-image: url("http://i.imgur.com/3uDxPBl.jpg");
+  background-position: center;
+  opacity: .5;
+
 }
