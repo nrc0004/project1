@@ -1,6 +1,13 @@
+*{
+  font-family: 'Raleway', sans-serif;
+}
 .name{
   text-align: center;
   font-size: 50px;
+}
+
+.navbar {
+     margin-bottom: 0 !important;
 }
 
 .title {
@@ -25,14 +32,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  background-position: center;
+  background-size: cover;
 }
 
 .row {
   margin-top: 0;
-}
-
-.container-fluid {
-  margin: 0;
 }
 
 .cat {
@@ -44,25 +49,30 @@
   line-height: 60px;
   text-align: center;
   vertical-align: middle;
+  font-size: 30px;
+  color: white;
 }
 
 .card {
   height: 65%;
   width: 70%;
-  background-color: white;
+  background-color: rgba(255,255,255, .5);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 
-
 }
 
+ul{
+  font-size: 20px;
+  list-style-type: none;
+}
 .question{
   width: 90%;
   height: 50%;
-  background-color: red;
+
   text-align: center;
 
 }
@@ -81,5 +91,28 @@
   background-image: url("http://i.imgur.com/3uDxPBl.jpg");
   background-position: center;
   opacity: .5;
+  font-family: 'Abril Fatface', cursive;
+}
 
+#card2{
+  background-image: url("http://i.imgur.com/r1nBBTD.jpg");
+  background-position: center;
+  opacity: .5;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#card3{
+  background-image: url("http://i.imgur.com/CTCiHwq.jpg");
+  background-position: center;
+  opacity: .5;
+  font-family: 'Jim Nightshade', cursive;
+  font-size: 40px;
+}
+
+#card4{
+  background-image: url("http://i.imgur.com/MAntXg7.jpg");
+  background-position: center;
+  opacity: .5;
+  font-family: 'Jim Nightshade', cursive;
+  font-family: 'Revalia', cursive;
 }

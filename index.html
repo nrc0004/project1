@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Jim+Nightshade|Lobster|Orbitron|Pacifico|Pavanam|Raleway|Revalia" rel="stylesheet">
     <link rel="stylesheet" href="master.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -14,32 +14,39 @@
   </head>
 
   <body>
+
     <div class="container-fluid title">
       <h1 class="name">Trivia</h1>
     </div>
 
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
+      <div class="container-fluid nav">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Instructions</a></li>
-          <li><a href="#">About Trivia</a></li>
+          <li><a class="instructions" href="#">Instructions</a></li>
+          <li><a class= "about"href="#">About Trivia</a></li>
         </ul>
       </div>
     </nav>
 
     <main>
+
       <div class="row">
         <div class="col-sm-3 aside">
-          <div id="card1" class="cat"> Trivia</div>
-          <div  id="card2"class="cat"> Trivia</div>
-          <div  id="card3"class="cat"> Trivia</div>
-          <div id="card4" class="cat"> Trivia</div>
+          <div id="card1" class="cat"> Pop Culture</div>
+          <div id="card2"class="cat"> Science</div>
+          <div id="card3"class="cat"> Literature</div>
+          <div id="card4" class="cat"> History</div>
         </div>
+
         <div class="col-sm-9 display">
           <div class="card">
             <div class="question"></div>
-            <input id="playerAnswer" type="text" name="" value="">
-            <button class= "submit" type="button" name="button"> Submit Answer</button>
+            <div class="bottom">
+              <input id="playerAnswer" type="text" placeholder= "Enter Answer Here..." value="">
+              <button class= "submit" type="button" name="button"> Submit Answer</button>
+            </div>
+
+
           </div>
           <div class="next"> Next Question
           </div>
