@@ -14,38 +14,39 @@ $(document).ready(function(){
   var hisFlag = false
   var sciFlag = false
   var catagories= ["Pop Culture", "Science", "Literature", "History" ]
-  var rand = catagories[Math.floor(Math.random()*catagories.length)]
 
-var question = next.on("click", function(){
-  var rand = catagories[Math.floor(Math.random()*catagories.length)]
-  console.log (rand)
+next.on("click", function(){
 
-  if (rand === catagories[0]) {
+  var random = catagories[Math.floor(Math.random()*catagories.length)]
+  console.log (random)
+
+  if (random === catagories[0]) {
     var questions= "How many kids?"
     var choices = ["1", "2", "3", "4"]
     var answer = "2"
 
     //questions display
     question.html("<h2>"+ questions+ "</h2>")
-        for ( i= 0; i < choices.length; i++) {
-        question.append ("<li>" + choices[i] + "</li>")
-        }
+    for ( i= 0; i < choices.length; i++) {
+      question.append ("<li>" + choices[i] + "</li>")
+    }
 
     submit.on("click", function(){
       if (playerAnswer === null  || playerAnswer === "" ) {
         alert("You must enter an answer. Please type your answer in the space provided")
       } else{
         if (playerAnswer === answer) {
-            question.html("<h2> Correct!</h2>")
-            $("#card1").css("opacity", "1")
+          question.html("<h2> Correct!</h2>")
+          $("#card1").css("opacity", "1")
         } else {
           question.html("<h2> Sorry that is incorrect.</h2> <p>Press Next to keep playing</p>")
         }
       }
     })
   }
-}
+  }
 )
+
 
   //run when next button is clicked
 
