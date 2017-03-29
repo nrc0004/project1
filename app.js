@@ -21,12 +21,12 @@ $(document).ready(function(){
 
 // <---Intro and how to--->
 about.on("click", function(){
-    question.html("<h1> This is a test</h1><p>more testing</p>")
+    question.html("<h1>Welcome</h1><p>Project Trivia is my first full project completed at General Assembly. Feel free to check out the full code <a href= 'https://github.com/nrc0004?tab=repositories'> here.</a></p></br><p>Key technologies used hto build this page: CSS, HTML, Bootstrap, JavaScript, and JQuery.</p>")
     bottom.remove()
 })
 
 instructions.on("click", function(){
-    question.html("<h1> THIS is a test</h1><p>more testing</p>")
+    question.html("<h1>Light 'em up!</h1><p>Work through the different categories and light up their topic centers. Once all four are lit, you win!</p>")
     bottom.remove()
 })
 
@@ -39,9 +39,9 @@ next.on("click", function(){
 
       if (random === catagories[0]) {
         var playerAnswer = $("#playerAnswer").val()
-        var questions= "How many kids?"
+        var questions= "How many kids does Kim Kardashian-West have with Kanye?"
         var choices = ["1", "2", "3", "4"]
-        var answer = "2"
+        var answer = "3"
 
         //change background to reflect category
         display.css("background-image", "url('http://i.imgur.com/DnXrgG2.jpg')")
@@ -67,9 +67,9 @@ next.on("click", function(){
       )
     } else if (random === catagories[1]){
       var playerAnswer = $("#playerAnswer").val()
-      var questions= "SCIENCE"
-      var choices = ["1", "2", "3", "4"]
-      var answer = "2"
+      var questions= "How many Moons does Saturn have?"
+      var choices = ["1", "5", "9", "64"]
+      var answer = "64"
 
       //change background to reflect category
       display.css("background-image", "url('http://i.imgur.com/r1nBBTD.jpg')")
@@ -95,9 +95,9 @@ next.on("click", function(){
     )
     } else if (random === catagories[2]){
       var playerAnswer = $("#playerAnswer").val()
-      var questions= "LITTT"
-      var choices = ["1", "2", "3", "4"]
-      var answer = "2"
+      var questions= "What is the name of the Great Gatsby's love interst?"
+      var choices = ["Diane", "Daisy", "Danielle", "Dora"]
+      var answer = "Daisy"
 
       //change background to reflect category
       display.css("background-image", "url('http://i.imgur.com/CTCiHwq.jpg')")
@@ -123,9 +123,9 @@ next.on("click", function(){
     )
     } else if(random === catagories[3]){
         var playerAnswer = $("#playerAnswer").val()
-        var questions= "History"
-        var choices = ["1", "2", "3", "4"]
-        var answer = "2"
+        var questions= "How long was the long war?"
+        var choices = ["5 years", "10 years", "13 years", "100 years"]
+        var answer = "13 years"
 
         //change background to reflect category
         display.css("background-image", "url('http://i.imgur.com/MAntXg7.jpg')")
